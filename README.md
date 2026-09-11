@@ -1,23 +1,7 @@
-# Zombie Night: Rescue — prototype 0.1.0
+# Zombie Night Rescue
 
-Android pixel-art action prototype based on the supplied protagonist reference.
+Android pixel-art zombie survival prototype.
 
-## Included
-- Title screen and first apartment scene.
-- Transition to city survival scene.
-- Pixel-art protagonist inspired by the supplied reference (hair, glasses, beard, open shirt, tattoo, blue jeans).
-- Touch controls.
-- Puños, bate, pistola and botella as prototype weapons.
-- Three zombie types and basic damage/health/score.
-- Collectible weapons and simple enemy spawning.
+The project is structured as a standard Gradle Android application. GitHub Actions builds the debug APK automatically on pushes to `main`.
 
-## Automatic APK build
-This repository includes a GitHub Actions workflow at `.github/workflows/android-apk.yml`.
-
-1. Create a GitHub repository.
-2. Upload the contents of this folder to the repository.
-3. Open the **Actions** tab and run **Build Zombie Night Rescue APK** (or push to `main`/`master`).
-4. When it finishes, open the workflow run and download the artifact named **ZombieNightRescue-debug-apk**.
-5. Extract the artifact and install `app-debug.apk` on your Android phone. You may need to allow installation from the browser/file manager when Android asks.
-
-The workflow uses JDK 17 and Gradle 9.5 and builds `:app:assembleDebug`.
+APK output: `app/build/outputs/apk/debug/app-debug.apk`
